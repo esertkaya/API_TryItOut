@@ -20,5 +20,14 @@ public class RequestResponse {
         //status line nasil yazdirilir?
         System.out.println("Status Line: "+response.statusLine());
 
+        //header bolumundeki bir veri nasil yazdirilir?
+        System.out.println("Header | Server:"+response.header("Server"));
+
+        //headers:
+        System.out.println("Headers: "+response.headers());
+
+        //Time bilgisi nasil yazdirilir?
+        System.out.println("Time: "+response.time());
+
     }
 }
