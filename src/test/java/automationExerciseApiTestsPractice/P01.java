@@ -20,13 +20,14 @@ Response JSON: All products list
          */
 
         String url="https://automationexercise.com/api/productsList";
-        Response response=
-                given()
-                        .when()
-                        .get(url);
+        Response response= given().when().get(url);
+        response
+                .then()
+                .assertThat()
+                .statusCode(200);
         response.prettyPrint();
-        System.out.println(response.statusCode());
-        System.out.println(response.contentType());
+
+
 
 
     }
