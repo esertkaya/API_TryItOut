@@ -45,6 +45,5 @@ ve Response Body’sindeki, “title”’in “API” oldugunu
                 .body("userId",lessThan(100))
                 .body("body",containsString("API"));
 
-
     }
 }
