@@ -1,5 +1,6 @@
 package practice;
 
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.Test;
@@ -33,5 +34,6 @@ ve response body'sindeki
                 .body("data.id",hasSize(24))
                 .body("data.employee_name[2]",equalTo("Ashton Cox"))
                 .body("data.employee_age",hasItems(61,21,35));
+
     }
 }

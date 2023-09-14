@@ -27,9 +27,11 @@ Response JSON: All brands list
                 .statusCode(200)
                 .and()
                 .extract().response();
-        String json=response.asPrettyString();
-        assertNotNull(json);
-        System.out.println(json);
+        String allBrandsList=response.asPrettyString();
+        assertNotNull(allBrandsList);
+        System.out.println("All Brands List: "+allBrandsList);
+
+
 
     }
 }
